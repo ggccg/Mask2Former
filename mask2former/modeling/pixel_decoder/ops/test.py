@@ -28,7 +28,7 @@ level_start_index = torch.cat((shapes.new_zeros((1, )), shapes.prod(1).cumsum(0)
 S = sum([(H*W).item() for H, W in shapes])
 
 
-torch.manual_seed(3)
+torch.manual_seed(42)
 
 
 @torch.no_grad()
