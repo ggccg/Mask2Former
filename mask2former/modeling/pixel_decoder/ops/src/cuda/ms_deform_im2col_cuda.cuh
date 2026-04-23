@@ -17,11 +17,9 @@
 #include <cstdio>
 #include <algorithm>
 #include <cstring>
-
 #include <ATen/ATen.h>
 #include <ATen/cuda/CUDAContext.h>
-
-#include <THC/THCAtomics.cuh>
+#include <ATen/cuda/Atomic.cuh>
 
 #define CUDA_KERNEL_LOOP(i, n)                          \
   for (int i = blockIdx.x * blockDim.x + threadIdx.x;   \

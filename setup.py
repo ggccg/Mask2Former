@@ -89,7 +89,7 @@ setup(
         "hydra-core>=1.1.1",
         # there is BC breaking in omegaconf 2.2.1
         # see: https://github.com/omry/omegaconf/issues/939
-        "omegaconf==2.1.1",
+        "omegaconf>=2.1.1",
         "panopticapi @ https://github.com/cocodataset/panopticapi/archive/master.zip",
         "lvis @ https://github.com/lvis-dataset/lvis-api/archive/master.zip",
     ],
